@@ -24,9 +24,6 @@
   },
   "minimum-stability": "stable",
   "autoload": {
-    "psr-4": {
-      "phpfix\\": "phpfix/"
-    },
     "files": [
       "phpfix/core.php"
     ]
