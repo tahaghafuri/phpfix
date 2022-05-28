@@ -19,11 +19,15 @@
         "type": "vcs",
         "url": "https://github.com/tahaghafuri/phpfix"
     }
+  ],
   "support": {
         "email": "tahaghafuri@gmail.com"
   },
   "minimum-stability": "stable",
   "autoload": {
+    "psr-4": {
+      "phpfix\\": "phpfix/"
+    },
     "files": [
       "phpfix/core.php"
     ]
