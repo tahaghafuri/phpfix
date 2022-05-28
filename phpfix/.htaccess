@@ -1,0 +1,14 @@
+#Disable Directory Browsing
+Options -Indexes
+#URL System
+<ifModule mod_rewrite.c>
+RewriteEngine On
+order deny,allow
+deny from all
+allow from 127.0.0.1
+<FilesMatch "\.(?:php|txt|json|md|lock|bat)$">
+Order allow,deny
+Deny from all
+allow from 127.0.0.1
+</FilesMatch>
+</ifModule>

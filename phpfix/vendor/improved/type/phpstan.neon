@@ -1,0 +1,9 @@
+parameters:
+    level: 7
+    paths:
+        - src
+    ignoreErrors:
+        - '/Binary operation "\+" between .+ and 0 results in an error/'
+includes:
+  	- vendor/phpstan/phpstan-strict-rules/rules.neon
+
