@@ -9,9 +9,14 @@
   "authors": [
     {
       "name": "Taha Amin Ghafuri",
-      "email": "tahaghafuri@gmail.com"
+      "email": "tahaghafuri@gmail.com",
+      "homepage": "https://teekyar.ir",
+      "role": "Developer"
     }
   ],
+  "support": {
+        "email": "tahaghafuri@gmail.com"
+  },
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
@@ -20,9 +25,5 @@
     "files": [
       "phpfix/core.php"
     ]
-  },
-  "extra": {
-  },
-  "require-dev": {
   }
 }
