@@ -1,0 +1,15 @@
+{
+  "name": "tahaghafuri/phpfix",
+  "description": "PHPFix Library For PHP",
+  "type": "library",
+  "require": {
+    "php": ">=7.4.0"
+  },
+  "authors": [
+    {
+      "name": "Taha Amin Ghafuri",
+      "email": "tahaghafuri@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
