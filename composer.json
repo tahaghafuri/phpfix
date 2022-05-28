@@ -5,6 +5,7 @@
   "require": {
     "php": ">=7.4.0"
   },
+  "license": "proprietary",
   "authors": [
     {
       "name": "Taha Amin Ghafuri",
@@ -14,10 +15,14 @@
   "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
-      "PHPFIX\\": "phpfix/"
+      "phpfix\\": "phpfix/"
     },
     "files": [
       "phpfix/core.php"
     ]
+  },
+  "extra": {
+  },
+  "require-dev": {
   }
 }
