@@ -12,4 +12,12 @@
     }
   ],
   "minimum-stability": "stable"
+  "autoload": {
+    "psr-4": {
+      "PHPFIX\\": "phpfix/"
+    },
+    "files": [
+      "phpfix/core.php"
+    ]
+  }
 }
