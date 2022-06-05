@@ -5,4 +5,4 @@ Fix PHP Bugs And Optimize PHP
 ## Packagist
 https://packagist.org/packages/tahaghafuri/phpfix
 # Help
-Coming Soon . . .
+In Wiki:https://github.com/phpfix/phpfix/wiki
