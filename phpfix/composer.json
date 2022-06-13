@@ -1,6 +1,7 @@
 {
     "require": {
         "jasny/auth": "^2.2",
+        "guzzlehttp/guzzle": "7.4.4",
         "melipayamak/php": "1.0.0",
         "cloudflare/sdk": "^1.3"
     }
