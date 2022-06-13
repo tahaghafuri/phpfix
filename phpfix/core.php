@@ -33,18 +33,40 @@ function err($name) {
     }
 }
 // Clean Function
-function clean($conn,$var,$out=1){
-	if(not_empty($var)) {
-		switch($out){
-            case 1:
-                $r=mysqli_real_escape_string($conn,stripslashes($var));
-                break;
-            case 2:
-                $r=mysqli_real_escape_string($conn,$var);
-                break;
-            default:
-                $r=err('clean function out inputs cannot be empty!');
-        }
+function clean($text){
+	if(not_empty($text)) {
+	    $text=str_replace('/','',$text);
+	    $text=str_replace('*','',$text);
+	    $text=str_replace('+','',$text);
+	    $text=str_replace('-',' ',$text);
+	    $text=str_replace('_',' ',$text);
+	    $text=str_replace('=','',$text);
+	    $text=str_replace('`','',$text);
+	    $text=str_replace('"','',$text);
+	    $text=str_replace("'",'',$text);
+	    $text=str_replace('!','',$text);
+	    $text=str_replace('~','',$text);
+	    $text=str_replace('@','',$text);
+	    $text=str_replace('#','',$text);
+	    $text=str_replace('$','',$text);
+	    $text=str_replace('%','',$text);
+	    $text=str_replace('^','',$text);
+	    $text=str_replace('&','',$text);
+	    $text=str_replace(')','',$text);
+	    $text=str_replace('(','',$text);
+	    $text=str_replace('|','',$text);
+	    $text=str_replace('{','',$text);
+	    $text=str_replace('}','',$text);
+	    $text=str_replace('[','',$text);
+	    $text=str_replace(']','',$text);
+	    $text=str_replace(':','',$text);
+	    $text=str_replace(';','',$text);
+	    $text=str_replace('?','',$text);
+	    $text=str_replace('<','',$text);
+	    $text=str_replace('>','',$text);
+	    $text=str_replace(',',' ',$text);
+	    $text=str_replace('.',' ',$text);
+	    $r=$text;
 	}else{
         $r=err('clean function inputs cannot be empty!');
 	}
@@ -133,27 +155,27 @@ function find_constant($name) {
     return $r;
 }
 // Post Clean Function
-function post($conn,$name) {
-    if(not_empty($conn) && not_empty($name)){
-        $r=clean($conn,$_POST[$name]);
+function post($name) {
+    if(not_empty($name)){
+        $r=clean($_POST[$name]);
     }else{
         $r=err('post function inputs cannot be empty!');
     }
     return $r;
 }
 // Get Clean Function
-function get($conn,$name) {
-    if(not_empty($conn) && not_empty($name)){
-        $r=clean($conn,$_GET[$name]);
+function get($name) {
+    if(not_empty($name)){
+        $r=clean($_GET[$name]);
     }else{
         $r=err('get function inputs cannot be empty!');
     }
     return $r;
 }
 // Request Function
-function request($conn,$name) {
-    if(not_empty($conn) && not_empty($name)){
-        $r=clean($conn,$_REQUEST[$name]);
+function request($name) {
+    if(not_empty($name)){
+        $r=clean($_REQUEST[$name]);
     }else{
         $r=err('request function inputs cannot be empty!');
     }
@@ -210,9 +232,9 @@ function cookie($name,$value,$expire=0,$path='',$domain='') {
     return $r;
 }
 // Read Cookie Function
-function rcookie($conn,$name) {
-    if(not_empty($conn) && not_empty($name)){
-        $r=clean($conn,$name);
+function rcookie($name) {
+    if(not_empty($name)){
+        $r=clean($name);
     }else{
         $r=err('rcookie function inputs cannot be empty!');
     }
