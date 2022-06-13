@@ -264,12 +264,3 @@ function upload($name,$path) {
     }
     return $r;
 }
-// File Function
-function file($name) {
-    if(not_empty($name)){
-        $r=$_FILES[$name];
-    }else{
-        $r=err('file function input cannot be empty!');
-    }
-    return $r;
-}
