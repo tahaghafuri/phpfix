@@ -8,3 +8,5 @@ https://gist.github.com/tahaghafuri/96a46322a85352ab11df933ea3b4752c
 https://packagist.org/packages/tahaghafuri/phpfix
 # Help
 In Wiki:https://github.com/phpfix/phpfix/wiki
+# Big Update
+BigUpdate is developing!
