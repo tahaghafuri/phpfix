@@ -1,3 +1,7 @@
+# Warning!
+This Library is Depreated And Have Bad And Major Bugs!<br>
+Please Use <a href="https://github.com/teekyar/phix">This</a> Library!
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 # PHPFIX Library
 Fix PHP Bugs And Optimize PHP
 ## Install via Composer
